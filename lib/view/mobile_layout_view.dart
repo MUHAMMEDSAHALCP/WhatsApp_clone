@@ -9,7 +9,9 @@ class MobileLayoutView extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          actions: const [],
+          actions: const [
+            
+          ],
         ),
       ),
     );
