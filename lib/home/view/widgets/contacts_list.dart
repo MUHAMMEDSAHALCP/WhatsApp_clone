@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/info.dart';
 
 class ContactList extends StatelessWidget {
   const ContactList({Key? key}) : super(key: key);
@@ -10,8 +10,25 @@ class ContactList extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       child: ListView.builder(
         itemBuilder: ((context, index) {
-          return Column();
+          return Column(
+            children: [
+              ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(
+                    info[index]["image"].toString(),
+                  ),
+                ),
+                title: Text(
+                  info[index]["name"],
+                ),
+                subtitle: Text(
+                  info[index]["message"],
+                ),
+              )
+            ],
+          );
         }),
+        itemCount: info.length,
       ),
     );
   }
