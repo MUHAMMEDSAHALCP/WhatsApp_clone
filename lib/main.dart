@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/home/view/mobile_layout_view.dart';
+import 'package:whatsapp_clone/home/view/web_layout_view.dart';
 import 'package:whatsapp_clone/utilities/responsive_layout.dart';
 import 'package:whatsapp_clone/view/mobile_layout_view.dart';
 import 'package:whatsapp_clone/view/web_layout_view.dart';
