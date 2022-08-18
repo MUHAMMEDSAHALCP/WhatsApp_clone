@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/home/view/widgets/contacts_list.dart';
 import 'package:whatsapp_clone/utilities/colors.dart';
 
 class MobileLayoutView extends StatelessWidget {
@@ -20,11 +21,33 @@ class MobileLayoutView extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          actions: const [
-          
-
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.search),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.more_vert,
+              ),
+            ),
           ],
+          bottom: const TabBar(
+            tabs: [
+              Tab(
+                text: "CHATS",
+              ),
+              Tab(
+                text: "STATUS",
+              ),
+              Tab(
+                text: "CALLS",
+              ),
+            ],
+          ),
         ),
+        body: const ContactList(),
       ),
     );
   }
