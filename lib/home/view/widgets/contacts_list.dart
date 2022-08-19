@@ -35,7 +35,7 @@ class ContactList extends StatelessWidget {
                     info[index]["message"],
                   ),
                 ),
-              )
+              ),
             ],
           );
         }),
